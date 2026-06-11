@@ -1,0 +1,9 @@
+def max_value(numbers):
+    max_num = numbers[0]
+    for num in numbers:
+        if num > max_num:
+            max_num = num
+    return max_num
+Input_numbers = input().split()
+Input_numbers = [int(x) for x in Input_numbers]
+print(max_value(Input_numbers))
